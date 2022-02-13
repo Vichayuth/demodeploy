@@ -116,7 +116,7 @@ export default {
   methods: {
     getUser() {
       axios
-        .get(`http://${SERVER_IP}:${PORT}/users/${this.olddatauser._id}`)
+        .get(`https://${SERVER_IP}:${PORT}/users/${this.olddatauser._id}`)
         .then((res) => {
           const data = res.data;
           if (data.status) {
