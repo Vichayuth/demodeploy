@@ -142,7 +142,7 @@ export default {
         lineid: this.user.lineid,
       };
       axios
-        .put(`http://${SERVER_IP}:${PORT}/users/${this.user._id}`, formData)
+        .put(`https://${SERVER_IP}:${PORT}/users/${this.user._id}`, formData)
         .then((res) => {
           const data = res.data;
           if (data.status) {
